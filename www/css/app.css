@@ -4,22 +4,40 @@ html {
 
 #listview {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+  border-radius: 0px 50px;
+  margin: auto !important;
 }
 
 #events {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+  border-radius: 50px 0px;
+  margin: auto !important;
 }
 
 #clothing{
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+  border-radius: 50px 0px;
+  margin: auto !important;
+  margin-top: 12.5px !important;
 }
 
 #food {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+  border-radius: 0px 50px;
+  margin: auto !important;
+  margin-top: 12.5px !important;
 }
 
-.nav-btn {
-  border-radius: 15px 50px;
+.nav-btn1 {
+  border-radius: 0px 50px;
+  background-color: Transparent;
+  margin: auto !important;
+}
+
+.nav-btn2 {
+  border-radius: 50px 0px;
+  background-color: Transparent;
+  margin: auto !important;
 }
 
 .parallax-wide-container {
