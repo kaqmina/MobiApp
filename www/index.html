@@ -9,10 +9,8 @@
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
     <title>Wedding Invitation</title>
-    <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
     <!-- App root element -->
@@ -25,28 +23,73 @@
         <!-- Initial Page, "data-name" contains page name -->
         <div data-name="home" class="page">
 
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Awesome App</div>
-            </div>
-          </div>
-
-          <!-- Toolbar -->
-          <div class="toolbar">
-            <div class="toolbar-inner">
-              <!-- Toolbar links -->
-              <a href="#" class="link">Link 1</a>
-              <a href="#" class="link">Link 2</a>
-            </div>
-          </div>
-
           <!-- Scrollable page content -->
           <div class="page-content">
-            
-            <p>Page content goes here</p>
-            <!-- Link to another page -->
-            <a href="/about/">About app</a>
+            <div data-direction='vertical' data-parallax="true" data-speed="600" class="swiper-container swiper-init demo-swiper-parallax">
+              <div data-swiper-parallax="-23%" style="background-image:url(img/home_02.jpeg)" class="swiper-parallax-bg"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div data-swiper-parallax="-300" class="swiper-slide-title">
+                    <div style="text-align:center;">
+                        <p class="home-heading black-content">Wilkins & Spring</p>
+                    </div>
+                    <!-- Add button here to smooth scroll to #main-info -->
+                  </div>
+                </div>
+                <div class="swiper-slide white-bg parallax-wide-container" style="width:100%;">
+                  <div data-swiper-parallax="-300" class="swiper-slide-subtitle black-content" id="main-info">You are invited!</div>
+                  <div data-swiper-parallax="-500" class="swiper-slide-text black-content">Time: Febuary 14, 2019 3:00PM</div>
+                  <div data-swiper-parallax="-700" class="swiper-slide-text black-content">Location: St. Francis Parish Church, Davao City</div>
+                  <div data-swiper-parallax="-900" class="swiper-slide-text black-content">Reception: WilkinsPure Hotel Rooftop</div>
+
+                  <!-- Cards start here -->
+                  <!-- List view to God Parents, Bride's Maid, Groom's Men, Sponsors ? -->
+                  <div data-swiper-parallax="-2000" class="swiper-slide-text">
+                    <div class="card demo-card-header-pic nav-btn" style="background-color: transparent">
+                      <a href="#">
+                        <div id="listview" class="card-header align-items-flex-end nav-btn">
+                          God Parents <br /> Groom's Men <br /> Bride's Maid
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Timetable for the sequence of events -->
+                  <div data-swiper-parallax="-3000" class="swiper-slide-text">
+                    <div class="card demo-card-header-pic nav-btn" style="background-color: transparent">
+                      <a href="#">
+                        <div id="events" class="card-header align-items-flex-end nav-btn">
+                          Events
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Theme for Clothing -->
+                  <div data-swiper-parallax="-4000" class="swiper-slide-text">
+                    <div class="card demo-card-header-pic nav-btn" style="background-color: transparent">
+                      <a href="#">
+                        <div id="clothing" class="card-header align-items-flex-end nav-btn">
+                          Clothing
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Food Menu -->
+                  <div data-swiper-parallax="-5000" class="swiper-slide-text">
+                    <div class="card demo-card-header-pic nav-btn" style="background-color: transparent">
+                      <a href="#">
+                        <div id="food" class="card-header align-items-flex-end nav-btn">
+                          Food Menu
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End Cards -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
