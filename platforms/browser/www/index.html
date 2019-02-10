@@ -10,13 +10,16 @@
     <!-- Your app title -->
     <title>Wedding Invitation</title>
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/my-config.css">
     <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/my-jq.js"></script>
   </head>
   <body>
     <!-- App root element -->
     <div id="app">
       <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
+      <div class="with-statusbar"></div>
 
       <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
@@ -26,87 +29,107 @@
           <!-- Scrollable page content -->
           <div class="page-content">
             <div data-direction='vertical' data-parallax="true" data-speed="600" class="swiper-container swiper-init demo-swiper-parallax">
-              <div data-swiper-parallax="-23%" style="background-image:url(img/home_02.jpeg)" class="swiper-parallax-bg"></div>
+              <div data-swiper-parallax="-23%" class="swiper-parallax-bg background-cover"></div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div data-swiper-parallax="-300" class="swiper-slide-title">
-                    <div style="text-align:center;">
-                        <p class="home-heading black-content">Wilkins & Spring</p>
+                    <div style="text-align:center;">  
+                        <p class="home-heading black-content"> 
+                          Michael <br /><small style="font-size:20px;">&</small><br />Antoinette
+                        </p>
                     </div>
                     <!-- Add button here to smooth scroll to #main-info -->
                   </div>
                 </div>
-                <div class="swiper-slide white-bg parallax-wide-container" style="width:100%;">
-                  <div data-swiper-parallax="-300" class="swiper-slide-subtitle black-content" id="main-info">You are invited!</div>
-                  <div data-swiper-parallax="-500" class="swiper-slide-text black-content">Time: Febuary 14, 2019 3:00PM</div>
-                  <div data-swiper-parallax="-700" class="swiper-slide-text black-content">Location: St. Francis Parish Church, Davao City</div>
-                  <div data-swiper-parallax="-900" class="swiper-slide-text black-content">Reception: WilkinsPure Hotel Rooftop</div>
+                <div class="swiper-slide parallax-wide-container white-bg">
+                  <div data-swiper-parallax="-300" class="swiper-slide-subtitle black-content" id="main-info"><p class="text-abo" style="text-align: center;">INVITATION</p></div>
+                  <div data-swiper-parallax="-500" class="swiper-slide-text black-content"><p class="text-neo" style="text-align: center;"><small class="text-neob">Time:</small> Febuary Midnight</p></div>
+                  <div data-swiper-parallax="-700" class="swiper-slide-text black-content"><p class="text-neo" style="text-align: center;"><small class="text-neob"></small>Location:</small> St. Francis Parish Church, Davao City</p></div>
+                  <div data-swiper-parallax="-900" class="swiper-slide-text black-content"><p class="text-neo" style="text-align: center;"><small class="text-neob"></small>Reception:</small> WilkinsPure Hotel Rooftop</p></div>
 
-                  <!-- Cards start here -->
-                  <div class="row">
-                    <div class="col-50">
-                      <!-- List view to God Parents, Bride's Maid, Groom's Men, Sponsors ? -->
-                      <div data-swiper-parallax="-2000" class="swiper-slide-text">
-                          <div class="card demo-card-header-pic nav-btn1">
-                            <a href="#">
-                              <div id="listview" class="card-header align-items-flex-end">
-                                God Parents <br /> Groom's Men <br /> Bride's Maid
+                  <div class="" style="margin-top:30px;">
+                    <!-- Cards start here -->
+                    <div class="row">
+                        <div class="col-50">
+                          <!-- List view to God Parents, Bride's Maid, Groom's Men, Sponsors ? -->
+                          <div data-swiper-parallax="-2000" class="swiper-slide-text">
+                              <div class="card demo-card-header-pic nav-btn1">
+                                <a href="/list/">
+                                  <div id="listview" class="card-header align-items-flex-end">
+                                    <p class="text-neo" style="text-align: right;">Family</p>
+                                  </div>
+                                </a>
                               </div>
-                            </a>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                          <!-- Timetable for the sequence of events -->
+                          <div data-swiper-parallax="-2300" class="swiper-slide-text nav-btn">
+                            <div class="card demo-card-header-pic nav-btn2">
+                              <a href="/time/">
+                                <div id="events" class="card-header align-items-flex-end">
+                                    <p class="text-neo" style="text-align: left;">Events</p>
+                                </div>
+                              </a>
+                            </div>
                           </div>
                         </div>
-                    </div>
-
-                    <div class="col-50">
-                      <!-- Timetable for the sequence of events -->
-                      <div data-swiper-parallax="-3000" class="swiper-slide-text nav-btn">
-                        <div class="card demo-card-header-pic nav-btn2">
-                          <a href="#">
-                            <div id="events" class="card-header align-items-flex-end">
-                              Events
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col-50">
+                          <!-- Theme for Clothing -->
+                          <div data-swiper-parallax="-2600" class="swiper-slide-text">
+                            <div class="card demo-card-header-pic nav-btn2">
+                              <a href="/attire/">
+                                <div id="clothing" class="card-header align-items-flex-end">
+                                    <p class="text-neo" style="text-align: right;">Attire</p>
+                                </div>
+                              </a>
                             </div>
-                          </a>
+                          </div>
+                        </div>
+
+                        <div class="col-50">
+                          <!-- Food Menu -->
+                          <div data-swiper-parallax="-2900" class="swiper-slide-text">
+                            <div class="card demo-card-header-pic nav-btn1">
+                              <a href="/food/">
+                                <div id="food" class="card-header align-items-flex-end">
+                                    <p class="text-neo" style="text-align: left;">Food</p>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-
-                    </div>
+                      <!-- End Cards -->
                   </div>
-                  
-                  <div class="row">
-                    <div class="col-50">
-                      <!-- Theme for Clothing -->
-                      <div data-swiper-parallax="-4000" class="swiper-slide-text">
-                        <div class="card demo-card-header-pic nav-btn2">
-                          <a href="#">
-                            <div id="clothing" class="card-header align-items-flex-end">
-                              Clothing
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-50">
-                      <!-- Food Menu -->
-                      <div data-swiper-parallax="-5000" class="swiper-slide-text">
-                        <div class="card demo-card-header-pic nav-btn1">
-                          <a href="#">
-                            <div id="food" class="card-header align-items-flex-end">
-                              Food Menu
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Cards -->
-
-
                 </div>
+                
               </div>
             </div>
           </div>
+
+          <!-- Popups here -->
+          <div class="popup popup-about">
+            <div class="block">
+              <!-- Close Popup -->
+              <p style="align-content: right;"><a class="link popup-close" href="#">Close</a></p>
+                  <div class="block" style="background-image: url(img/men-attire-3.jpg); height:555px;">
+                  </div>
+  
+                  <div class="block" style="background-image: url(img/women-attire-2.jpg); height:555px;">
+  
+                  </div>
+              
+            </div>
+          </div>
+
         </div>
+        <!-- End Page Content -->
+
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->

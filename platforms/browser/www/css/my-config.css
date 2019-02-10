@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */     
+}
+
+.timeline-headings {
+    font-size: 12px;
+    font-family: 'NEOTERIC', Fallback, sans-serif;
+}
+
+.custom-navbar-back {
+    height: inherit;
+    widows: 60px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left:14px;
+}
+
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 1);
+    height: 40px;
+}
+
+.custom-navbar p {
+    text-align: center;
+}
+
+/* test */
+.auto-adjust-div {
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.circle-btn {
+    width: 50px;
+    height: 50px;
+    border: solid 0.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #e1e1e1;
+    border-radius: 50%;
+}
+
+.background-cover {
+background: url(../img/home_02.jpeg) no-repeat;
+
+width: 130% !important;
+height: 130% !important;
+}
+
+.black-timeline {
+background: #000000;
+}
+
+#listview {
+background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+border-radius: 0px 50px;
+background-clip: padding-box;
+margin: auto !important;
+}
+
+#events {
+background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+border-radius: 50px 0px;
+margin: auto !important;
+}
+
+#clothing{
+background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+border-radius: 50px 0px;
+margin: auto !important;
+margin-top: 12.5px !important;
+}
+
+#food {
+background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+border-radius: 0px 50px;
+margin: auto !important;
+margin-top: 12.5px !important;
+}
+
+.nav-btn1 {
+border-radius: 0px 50px;
+background-color: Transparent;
+margin: auto !important;
+}
+
+.nav-btn2 {
+border-radius: 50px 0px;
+background-color: Transparent;
+margin: auto !important;
+}
+
+.parallax-wide-container {
+padding: 20px 20px 20px 20px !important;
+}
+
+.btn-circle-smooth {
+background-color: Transparent;
+width: 30px;
+height: 30px;
+text-align: center;
+padding: 6px 0;
+font-size: 12px;
+line-height: 1.428571429;
+border-radius: 50%;
+}
+
+.white-content {
+color: #e8eaed;
+}
+
+.black-content {
+color: #000000;
+}
+
+.white-bg {
+background-color:rgba(232, 234, 237, 1);
+}
+
+.black-bg {
+background-color:rgba(0, 0, 0, 1);
+
+}
+
+@font-face {
+font-family: 'Above DEMO';
+src: url(../fonts/AboveDEMO-Regular.eot);
+src: url(../fonts/AboveDEMO-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/AboveDEMO-Regular.woff2) format('woff2'),
+    url(../fonts/AboveDEMO-Regular.woff) format('woff'),
+    url(../fonts/AboveDEMO-Regular.ttf) format('truetype'),
+    url(../fonts/AboveDEMO-Regular.svg#AboveDEMO-Regular) format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.text-abo {
+font-family: 'Above DEMO', Fallback, sans-serif;
+font-size: 30px;
+}
+
+@font-face {
+font-family: 'NEOTERIC';
+src: url(../fonts/NEOTERIC.eot);
+src: url(../fonts/NEOTERIC.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NEOTERIC.woff2) format('woff2'),
+    url(../fonts/NEOTERIC.woff) format('woff'),
+    url(../fonts/NEOTERIC.ttf) format('truetype'),
+    url(../fonts/NEOTERIC.svg#NEOTERIC) format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.text-neo {
+font-family: 'NEOTERIC', Fallback, sans-serif;
+font-size: 15px;
+}
+
+@font-face {
+font-family: 'Just Signature';
+src: url(../fonts/JustSignatureRegular.eot);
+src: url(../fonts/JustSignatureRegular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/JustSignatureRegular.woff2) format('woff2'),
+    url(../fonts/JustSignatureRegular.woff) format('woff'),
+    url(../fonts/JustSignatureRegular.ttf) format('truetype'),
+    url(../fonts/JustSignatureRegular.svg#JustSignatureRegular) format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.text-jsig {
+font-family: 'Just Signature', Fallback, sans-serif;
+font-size: 30px;
+}
+
+@font-face {
+font-family: 'NEOTERIC B';
+src: url(../fonts/NEOTERIC-Bold.eot);
+src: url(../fonts/NEOTERIC-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NEOTERIC-Bold.woff2) format('woff2'),
+    url(../fonts/NEOTERIC-Bold.woff) format('woff'),
+    url(../fonts/NEOTERIC-Bold.ttf) format('truetype'),
+    url(../fonts/NEOTERIC-Bold.svg#NEOTERIC-Bold) format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+.text-neob {
+font-family: 'NEOTERIC B', Fallback, sans-serif;
+font-size: 15px;
+}
+
+@font-face {
+font-family: 'Scriptina';
+src: url(../fonts/Scriptina.eot);
+src: url(../fonts/Scriptina.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/Scriptina.woff2) format('woff2'),
+    url(../fonts/Scriptina.woff) format('woff'),
+    url(../fonts/Scriptina.ttf) format('truetype'),
+    url(../fonts/Scriptina.svg#Scriptina) format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.home-heading {
+font-family: 'Scriptina', Fallback, sans-serif;
+font-weight: normal;
+font-style: normal;
+font-size: 30px;
+}
+
+.no-copy {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */     
+}

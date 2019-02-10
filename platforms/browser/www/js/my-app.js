@@ -5,6 +5,10 @@ var app = new Framework7({
   name: 'My App',
   // App id
   id: 'com.example.cleanblank',
+  // Pushstate
+  view: {
+    pushState: true
+  },
   // Enable swipe panel
   panel: {
     swipe: 'left',
@@ -15,8 +19,29 @@ var app = new Framework7({
       path: '/about/',
       url: 'about.html',
     },
+    {
+      path: '/index/',
+      url: 'index.html',
+    },
+    {
+      path: '/time/',
+      url: 'timeline.html',
+    },
+    {
+      path: '/food/',
+      url: 'food.html',
+    },
+    {
+      path: '/list/',
+      url: 'listview.html',
+    },
+    {
+      path: '/attire/',
+      url: 'attire.html',
+    },
   ],
   // ... other parameters
 });
 
 var mainView = app.views.create('.view-main');
+
