@@ -6,6 +6,12 @@ html {
     user-select: none;          /* Likely future */     
 }
 
+.attire {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+}
+
 .timeline-headings {
     font-size: 12px;
     font-family: 'NEOTERIC', Fallback, sans-serif;
@@ -45,38 +51,48 @@ html {
 }
 
 .background-cover {
-background: url(../img/home_02.jpeg) no-repeat;
+    background: url(../img/home_02.jpeg) no-repeat;
 
-width: 130% !important;
-height: 130% !important;
+    width: 130% !important;
+    height: 130% !important;
 }
 
 .black-timeline {
 background: #000000;
 }
 
+.div-p-right {
+    width: 100%;
+    text-align: right;
+}
+
+.div-p-left {
+    width: 100%;
+    text-align: left;   
+}
+
 #listview {
-background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+background-image: linear-gradient( transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
 border-radius: 0px 50px;
 background-clip: padding-box;
 margin: auto !important;
 }
 
 #events {
-background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
 border-radius: 50px 0px;
 margin: auto !important;
 }
 
 #clothing{
-background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+background-image: linear-gradient( transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
 border-radius: 50px 0px;
 margin: auto !important;
 margin-top: 12.5px !important;
 }
 
 #food {
-background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/sample_pic3.png);
+background-image: linear-gradient(  transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
 border-radius: 0px 50px;
 margin: auto !important;
 margin-top: 12.5px !important;
@@ -86,6 +102,7 @@ margin-top: 12.5px !important;
 border-radius: 0px 50px;
 background-color: Transparent;
 margin: auto !important;
+width: 100%;
 }
 
 .nav-btn2 {
@@ -118,11 +135,11 @@ color: #000000;
 }
 
 .white-bg {
-background-color:rgba(232, 234, 237, 1);
+background-color:rgba(232, 234, 237, 0.5);
 }
 
 .black-bg {
-background-color:rgba(0, 0, 0, 1);
+background-color:rgba(0, 0, 0, 0.5);
 
 }
 

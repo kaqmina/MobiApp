@@ -45,3 +45,19 @@ var app = new Framework7({
 
 var mainView = app.views.create('.view-main');
 
+
+$('#listview').click(function() {
+    mainView.router.navigate  ('/list/');
+});
+
+$('#events').click(function() {
+  mainView.router.navigate  ('/time/');
+});
+
+$('#clothing').click(function() {
+  mainView.router.navigate  ('/attire/');
+});
+
+$('#food').click(function() {
+  mainView.router.navigate  ('/food/');
+});
