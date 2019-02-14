@@ -28,7 +28,8 @@
 
           <!-- Scrollable page content -->
           <div class="page-content">
-            <div data-direction='vertical' data-parallax="true" data-speed="600" class="swiper-container swiper-init demo-swiper-parallax">
+            <div data-direction='vertical' data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' data-parallax="true" data-speed="600" class="swiper-container swiper-init demo-swiper-parallax">
+              <div class="swiper-pagination"></div>
               <div data-swiper-parallax="-23%" class="swiper-parallax-bg background-cover"></div>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -41,8 +42,43 @@
                     <!-- Add button here to smooth scroll to #main-info -->
                   </div>
                 </div>
+
+                
                 <div class="swiper-slide parallax-wide-container black-bg">
-                  <div data-swiper-parallax="-300" class="swiper-slide-subtitle white-content" id="main-info"><p class="text-abo" style="text-align: center;">INVITATION</p></div>
+                  <div class="row">
+                    <div class="col-10"></div>
+                    <div class="col-80">
+                      <div data-swiper-parallax="0" class="swiper-slide-text nav-btn">
+                        <div class="circle-div"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-10"></div>
+
+                  <div class="row">
+                    <div class="col-10"></div>
+
+                    <div class="col-80">
+
+                      <div data-swiper-parallax="-300" class="swiper-slide-subtitle white-content" id="main-info"><p class="text-nature" style="text-align: center;">About Us</p></div>
+                      <div data-swiper-parallax="-300" class="swiper-slide-subtitle white-content" id="main-info">
+                        <p class="text-neo" style="text-align: center;">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae placerat velit, id condimentum turpis. Donec ac nulla nunc. 
+                          Vestibulum tristique, lacus et elementum volutpat, felis enim feugiat urna, id vulputate velit nisi sed augue. Etiam feugiat lorem eu massa imperdiet mollis. 
+                          Maecenas dui enim, iaculis ac sem vel, lacinia fringilla nulla. Pellentesque sed vestibulum risus. Phasellus iaculis auctor eleifend. Quisque pharetra nisl ante. 
+                          Nulla a lobortis lorem. In vestibulum id tellus id tempor. Aenean imperdiet pharetra venenatis. Etiam eu justo at nisl porttitor fringilla. Sed a dignissim dui, vitae commodo neque. 
+                          Etiam id tellus eros. Nulla rhoncus sem elit, quis mattis nunc congue quis.
+                        </p>
+                      </div>
+
+                    </div>
+
+                    <div class="col-10"></div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide parallax-wide-container" style="background-color: #000000;">
+                  <div data-swiper-parallax="-300" class="swiper-slide-subtitle white-content" id="main-info"><p class="text-nature" style="text-align: center;">Invitation</p></div>
                   <div data-swiper-parallax="-500" class="swiper-slide-text white-content"><p class="text-neo" style="text-align: center;"><small class="text-neob">Time:</small> Febuary Midnight</p></div>
                   <div data-swiper-parallax="-700" class="swiper-slide-text white-content"><p class="text-neo" style="text-align: center;"><small class="text-neob"></small>Location:</small> St. Francis Parish Church, Davao City</p></div>
                   <div data-swiper-parallax="-900" class="swiper-slide-text white-content"><p class="text-neo" style="text-align: center;"><small class="text-neob"></small>Reception:</small> WilkinsPure Hotel Rooftop</p></div>
@@ -56,7 +92,7 @@
                               <div class="card demo-card-header-pic nav-btn1">
                                 <a href="#">
                                   <div id="listview" class="card-header align-items-flex-end" onclick="">
-                                    <p class="text-neo div-p-right">Family</p>
+                                    <p class="text-neo div-p-right">Sponsors</p>
                                   </div>
                                 </a>
                               </div>
@@ -107,7 +143,7 @@
                       <!-- End Cards -->
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>

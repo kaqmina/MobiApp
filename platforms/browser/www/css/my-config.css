@@ -6,6 +6,30 @@ html {
     user-select: none;          /* Likely future */     
 }
 
+.circle-div {
+    margin-top: 40px;
+    height: 200px;
+    width: 200px;
+    border: solid 0.5px;
+    background-image: url(../img/about_us.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: #e1e1e1;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.sponsor-headings {
+    font-size: 17px;
+    font-family: 'Nature', Fallback, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.center-text-div {
+    text-align: center;
+}
+
 .attire {
     height: 100%;
     width: auto;
@@ -68,31 +92,39 @@ background: #000000;
 
 .div-p-left {
     width: 100%;
-    text-align: left;
+    text-align: left;   
 }
 
 #listview {
-background-image: linear-gradient( transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
+background-image: linear-gradient( transparent, rgba(0, 0, 0, 0.5)), url(../img/family.jpg);
+border-color: #e1e1e1;
+border: solid 0.5px;
 border-radius: 0px 50px;
 background-clip: padding-box;
 margin: auto !important;
 }
 
 #events {
-background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
+background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../img/events.jpg);
+border-color: #e1e1e1;
+border: solid 0.5px;
 border-radius: 50px 0px;
 margin: auto !important;
 }
 
 #clothing{
-background-image: linear-gradient( transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
+background-image: linear-gradient( transparent, rgba(0, 0, 0, 0.5)), url(../img/attire.jpg);
+border-color: #e1e1e1;
+border: solid 0.5px;
 border-radius: 50px 0px;
 margin: auto !important;
 margin-top: 12.5px !important;
 }
 
 #food {
-background-image: linear-gradient(  transparent, rgba(0, 0, 0, 0.5)), url(../img/sample_pic3.png);
+background-image: linear-gradient(  transparent, rgba(0, 0, 0, 0.5)), url(../img/food-1.jpg);
+border-color: #e1e1e1;
+border: solid 0.5px;
 border-radius: 0px 50px;
 margin: auto !important;
 margin-top: 12.5px !important;
@@ -143,91 +175,189 @@ background-color:rgba(0, 0, 0, 0.5);
 
 }
 
-@font-face {
-font-family: 'Above DEMO';
-src: url(../fonts/AboveDEMO-Regular.eot);
-src: url(../fonts/AboveDEMO-Regular.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/AboveDEMO-Regular.woff2) format('woff2'),
-    url(../fonts/AboveDEMO-Regular.woff) format('woff'),
-    url(../fonts/AboveDEMO-Regular.ttf) format('truetype'),
-    url(../fonts/AboveDEMO-Regular.svg#AboveDEMO-Regular) format('svg');
-font-weight: normal;
-font-style: normal;
-}
-
 .text-abo {
-font-family: 'Above DEMO', Fallback, sans-serif;
-font-size: 30px;
-}
-
-@font-face {
-font-family: 'NEOTERIC';
-src: url(../fonts/NEOTERIC.eot);
-src: url(../fonts/NEOTERIC.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NEOTERIC.woff2) format('woff2'),
-    url(../fonts/NEOTERIC.woff) format('woff'),
-    url(../fonts/NEOTERIC.ttf) format('truetype'),
-    url(../fonts/NEOTERIC.svg#NEOTERIC) format('svg');
-font-weight: normal;
-font-style: normal;
+    font-family: 'Above DEMO', Fallback, sans-serif;
+    font-size: 30px;
 }
 
 .text-neo {
-font-family: 'NEOTERIC', Fallback, sans-serif;
-font-size: 15px;
-}
-
-@font-face {
-font-family: 'Just Signature';
-src: url(../fonts/JustSignatureRegular.eot);
-src: url(../fonts/JustSignatureRegular.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/JustSignatureRegular.woff2) format('woff2'),
-    url(../fonts/JustSignatureRegular.woff) format('woff'),
-    url(../fonts/JustSignatureRegular.ttf) format('truetype'),
-    url(../fonts/JustSignatureRegular.svg#JustSignatureRegular) format('svg');
-font-weight: normal;
-font-style: normal;
+    font-family: 'NEOTERIC', Fallback, sans-serif;
+    font-size: 15px;
 }
 
 .text-jsig {
-font-family: 'Just Signature', Fallback, sans-serif;
-font-size: 30px;
-}
-
-@font-face {
-font-family: 'NEOTERIC B';
-src: url(../fonts/NEOTERIC-Bold.eot);
-src: url(../fonts/NEOTERIC-Bold.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/NEOTERIC-Bold.woff2) format('woff2'),
-    url(../fonts/NEOTERIC-Bold.woff) format('woff'),
-    url(../fonts/NEOTERIC-Bold.ttf) format('truetype'),
-    url(../fonts/NEOTERIC-Bold.svg#NEOTERIC-Bold) format('svg');
-font-weight: bold;
-font-style: normal;
+    font-family: 'Just Signature', Fallback, sans-serif;
+    font-size: 30px;
 }
 
 .text-neob {
-font-family: 'NEOTERIC B', Fallback, sans-serif;
-font-size: 15px;
+    font-family: 'NEOTERIC B', Fallback, sans-serif;
+    font-size: 18px;
+}
+
+.text-comfor-r {
+    font-family: 'Comfortaa-R', Fallback, sans-serif;
+}
+
+.text-lane-n {
+    font-family: 'Lane - Narrow', Fallback, sans-serif;
+}
+
+.text-comfor-i {
+    font-family: 'Comfortaa-I', Fallback, sans-serif;
+}
+
+.text-candle {
+    font-family: 'candlescript Demo Version', Fallback, sans-serif;
+}
+
+.text-marg {
+    font-family: 'Marguerite', Fallback, sans-serif;
+}
+
+.text-nature {
+    font-family: 'Nature', Fallback, sans-serif;
 }
 
 @font-face {
-font-family: 'Scriptina';
-src: url(../fonts/Scriptina.eot);
-src: url(../fonts/Scriptina.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/Scriptina.woff2) format('woff2'),
-    url(../fonts/Scriptina.woff) format('woff'),
-    url(../fonts/Scriptina.ttf) format('truetype'),
-    url(../fonts/Scriptina.svg#Scriptina) format('svg');
-font-weight: normal;
-font-style: normal;
+    font-family: 'Marguerite';
+    src: url(../fonts/Marguerite.eot);
+    src: url(../fonts/Marguerite.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Marguerite.woff2) format('woff2'),
+        url(../fonts/Marguerite.woff) format('woff'),
+        url(../fonts/Marguerite.ttf) format('truetype'),
+        url(../fonts/Marguerite.svg#Marguerite) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nature';
+    src: url(../fonts/NatureBeautyPersonalUse.eot);
+    src: url(../fonts/NatureBeautyPersonalUse.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NatureBeautyPersonalUse.woff2) format('woff2'),
+        url(../fonts/NatureBeautyPersonalUse.woff) format('woff'),
+        url(../fonts/NatureBeautyPersonalUse.ttf) format('truetype'),
+        url(../fonts/NatureBeautyPersonalUse.svg#NatureBeautyPersonalUse) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Comfortaa-R';
+    src: url(../fonts/Comfortaa-Regular.eot);
+    src: url(../fonts/Comfortaa-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Comfortaa-Regular.woff2) format('woff2'),
+        url(../fonts/Comfortaa-Regular.woff) format('woff'),
+        url(../fonts/Comfortaa-Regular.ttf) format('truetype'),
+        url(../fonts/Comfortaa-Regular.svg#Comfortaa-Regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lane - Narrow';
+    src: url(../fonts/Lane-Narrow.eot);
+    src: url(../fonts/Lane-Narrow.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Lane-Narrow.woff2) format('woff2'),
+        url(../fonts/Lane-Narrow.woff) format('woff'),
+        url(../fonts/Lane-Narrow.ttf) format('truetype'),
+        url(../fonts/Lane-Narrow.svg#Lane-Narrow) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa-I';
+    src: url(../fonts/Comfortaa-Light.eot');
+    src: url(../fonts/Comfortaa-Light.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Comfortaa-Light.woff2) format('woff2'),
+        url(../fonts/Comfortaa-Light.woff) format('woff'),
+        url(../fonts/Comfortaa-Light.ttf) format('truetype'),
+        url(../fonts/Comfortaa-Light.svg#Comfortaa-Light) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Candlescript Demo Version';
+    src: url(../fonts/CandlescriptDemoVersion.eot);
+    src: url(../fonts/CandlescriptDemoVersion.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/CandlescriptDemoVersion.woff2) format('woff2'),
+        url(../fonts/CandlescriptDemoVersion.woff) format('woff'),
+        url(../fonts/CandlescriptDemoVersion.ttf) format('truetype'),
+        url(../fonts/CandlescriptDemoVersion.svg#CandlescriptDemoVersion) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Above DEMO';
+    src: url(../fonts/AboveDEMO-Regular.eot);
+    src: url(../fonts/AboveDEMO-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/AboveDEMO-Regular.woff2) format('woff2'),
+        url(../fonts/AboveDEMO-Regular.woff) format('woff'),
+        url(../fonts/AboveDEMO-Regular.ttf) format('truetype'),
+        url(../fonts/AboveDEMO-Regular.svg#AboveDEMO-Regular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEOTERIC';
+    src: url(../fonts/NEOTERIC.eot);
+    src: url(../fonts/NEOTERIC.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NEOTERIC.woff2) format('woff2'),
+        url(../fonts/NEOTERIC.woff) format('woff'),
+        url(../fonts/NEOTERIC.ttf) format('truetype'),
+        url(../fonts/NEOTERIC.svg#NEOTERIC) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Just Signature';
+    src: url(../fonts/JustSignatureRegular.eot);
+    src: url(../fonts/JustSignatureRegular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/JustSignatureRegular.woff2) format('woff2'),
+        url(../fonts/JustSignatureRegular.woff) format('woff'),
+        url(../fonts/JustSignatureRegular.ttf) format('truetype'),
+        url(../fonts/JustSignatureRegular.svg#JustSignatureRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEOTERIC B';
+    src: url(../fonts/NEOTERIC-Bold.eot);
+    src: url(../fonts/NEOTERIC-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/NEOTERIC-Bold.woff2) format('woff2'),
+        url(../fonts/NEOTERIC-Bold.woff) format('woff'),
+        url(../fonts/NEOTERIC-Bold.ttf) format('truetype'),
+        url(../fonts/NEOTERIC-Bold.svg#NEOTERIC-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scriptina';
+    src: url(../fonts/Scriptina.eot);
+    src: url(../fonts/Scriptina.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/Scriptina.woff2) format('woff2'),
+        url(../fonts/Scriptina.woff) format('woff'),
+        url(../fonts/Scriptina.ttf) format('truetype'),
+        url(../fonts/Scriptina.svg#Scriptina) format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .home-heading {
-font-family: 'Scriptina', Fallback, sans-serif;
-font-weight: normal;
-font-style: normal;
-font-size: 30px;
+    font-family: 'Marguerite', Fallback, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
 }
 
 .no-copy {
