@@ -1,66 +1,44 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- Color theme for statusbar -->
-    <meta name="theme-color" content="#2196f3">
-    <!-- Your app title -->
-    <title>My App</title>
-    <!-- Path to Framework7 Library CSS -->
-    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
-  </head>
-  <body>
-    <!-- App root element -->
-    <div id="app">
-      <!-- Statusbar overlay -->
-      <div class="statusbar"></div>
+<!-- Initial Page, "data-name" contains page name -->
+<div data-name="time" class="page">
 
-      <!-- Your main view, should have "view-main" class -->
-      <div class="view view-main">
-        <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="about" class="page">
-
-          
-            
-
-          <!-- Top Navbar -->
-          <div class="navbar">
-              <div class="navbar-inner">
-                <div class="left">
-                  <a class="link back">
-                    <i class="icon icon-back"></i>
-                    <span class="ios-only">Back</span>
-                  </a>
-                </div>
-                <div class="title">About Us</div>
-              </div>
+  <!-- Scrollable page content -->
+  <div class="page-content">
+    <div class="custom-navbar">
+      <div class="row no-gap">
+        <div class="col-25" >
+          <a class="link back">
+            <div class="custom-navbar-back white-content">
+              BACK
             </div>
-  
-            <!-- Toolbar -->
-            <div class="toolbar">
-                <div class="toolbar-inner">
-                  <!-- Toolbar links -->
-                  <a href="#" class="link">Link 1</a>
-                  <a href="#" class="link">Link 2</a>
-                </div>
-              </div>
-
-          <!-- Scrollable page content -->
-          <div class="page-content">
-            <p>This is the about page</p>
-            <!-- Link to another page -->
-          </div>
+          </a>
+        </div>
+        <div class="col-50">
+          <p class="text-nature white-content" style="font-size: 20px; margin-top: 5px;"> Events</p>
+        </div>
+        <div class="col-25" >
         </div>
       </div>
     </div>
-    <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
-  </body>
-</html>
+    <div class="row">
+      <div class="col-10"></div>
+
+        <div class="col-80">
+
+          <div data-swiper-parallax="-300" class="swiper-slide-subtitle white-content" id="main-info"><p class="text-nature" style="text-align: center;">About Us</p></div>
+          <div data-swiper-parallax="-300" class="swiper-slide-subtitle white-content" id="main-info">
+            <p class="text-neo" style="text-align: center;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae placerat velit, id condimentum turpis. Donec ac nulla nunc. 
+              Vestibulum tristique, lacus et elementum volutpat, felis enim feugiat urna, id vulputate velit nisi sed augue. Etiam feugiat lorem eu massa imperdiet mollis. 
+              Maecenas dui enim, iaculis ac sem vel, lacinia fringilla nulla. Pellentesque sed vestibulum risus. Phasellus iaculis auctor eleifend. Quisque pharetra nisl ante. 
+              Nulla a lobortis lorem. In vestibulum id tellus id tempor. Aenean imperdiet pharetra venenatis. Etiam eu justo at nisl porttitor fringilla. Sed a dignissim dui, vitae commodo neque. 
+              Etiam id tellus eros. Nulla rhoncus sem elit, quis mattis nunc congue quis.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-10"></div>
+      </div>
+    </div>
+  </div>
+</div>
